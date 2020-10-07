@@ -1,4 +1,4 @@
-import { BarService } from "../services/BarService";
+import { BarService } from "@/services/BarService";
 
 export class FooController {
   private readonly barService: BarService;

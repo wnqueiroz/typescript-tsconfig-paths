@@ -1,5 +1,5 @@
-import { FooController } from "../../../src/controllers/FooController";
-import { BarService } from "../../../src/services/BarService";
+import { FooController } from "@/controllers/FooController";
+import { BarService } from "@/services/BarService";
 
 describe("Unit: FooController", () => {
   let fooController: FooController;
@@ -10,9 +10,7 @@ describe("Unit: FooController", () => {
 
   describe("foo", () => {
     it("should call bar method from BarService", () => {
-      const spy = jest
-        .spyOn(BarService.prototype, "bar")
-        .mockImplementation();
+      const spy = jest.spyOn(BarService.prototype, "bar").mockImplementation();
 
       fooController.foo();
 

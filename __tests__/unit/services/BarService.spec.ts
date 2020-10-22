@@ -1,4 +1,4 @@
-import { BarService } from "../../../src/services/BarService";
+import { BarService } from "@/services/BarService";
 
 describe("Unit: BarService", () => {
   let barService: BarService;
